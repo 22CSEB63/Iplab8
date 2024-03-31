@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://apex.oracle.com/pls/apex/r/apex/sql-workshop/sql-workshop?session=4296405036843 -->
+<html class="no-js page-3002 app-4500" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+
+<title>SQL Workshop</title>
+<link rel="shortcut icon" href="https://static.oracle.com/cdn/apex/23.2.4/apex_ui/img/favicons/favicon.ico">
+<link rel="icon" sizes="16x16" href="https://static.oracle.com/cdn/apex/23.2.4/apex_ui/img/favicons/favicon-16x16.png">
+<link rel="icon" sizes="32x32" href="https://static.oracle.com/cdn/apex/23.2.4/apex_ui/img/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.oracle.com/cdn/apex/23.2.4/apex_ui/img/favicons/favicon-180x180.png">
+<!--<base href="/pls/apex/">--><base href=".">
+<link rel="stylesheet" href="./SQL Workshop3_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./SQL Workshop3_files/Theme-Standard.min.css" type="text/css">
+
+<link rel="stylesheet" href="./SQL Workshop3_files/oraclesans-apex.min.css" type="text/css">
+
+
+<link rel="stylesheet" href="./SQL Workshop3_files/Core(1).min.css" type="text/css">
+<link rel="stylesheet" href="./SQL Workshop3_files/Theme-Dark.min.css" type="text/css">
+
+<link rel="stylesheet" href="./SQL Workshop3_files/apex_builder.min.css" type="text/css">
+
+
+
+
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><meta http-equiv="Cache-Control" content="no-cache">
+<script type="text/javascript" src="./SQL Workshop3_files/common.js.download" async="true" defer="true"></script><script type="text/javascript" src="./SQL Workshop3_files/analytics.js.download" async="true" defer="true"></script></head>
+<body class="  apex-theme-dark" data-new-gr-c-s-check-loaded="14.1165.0" data-gr-ext-installed="">
+<!--[if lte IE 9]><div id="outdated-browser">You are using an outdated web browser. For a list of supported browsers, please reference the Oracle APEX Installation Guide.</div><![endif]-->
+<noscript>You must run this product with JavaScript enabled.</noscript>
+<a href="https://apex.oracle.com/pls/apex/#main" id="a_Body_skipToContent">Skip to Main Content</a>
+
+<form role="none" action="https://apex.oracle.com/pls/apex/wwv_flow.accept?p_context=sql-workshop/sql-workshop/4296405036843" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="">
+<input type="hidden" name="p_flow_id" value="4500" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="3002" id="pFlowStepId"><input type="hidden" name="p_instance" value="4296405036843" id="pInstance"><input type="hidden" name="p_page_submission_id" value="185880722706122057801349551661450624128" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="A" id="pReloadOnSubmit"><input type="hidden" value="sql-workshop/sql-workshop/4296405036843" id="pContext"><input type="hidden" value="185880722706122057801349551661450624128" id="pSalt"><header>
+<div id="R386906063356677524" class="a-Header apex-sql-workshop"><div id="R386906446198682887" class="a-Header-col a-Header-col--left"><div id="R386906842726682887" class="" role="region" aria-label="Logo"><a href="https://apex.oracle.com/pls/apex/r/apex/workspace/home?session=4296405036843" class="a-Header-logo" title="Oracle APEX Home"><span role="img" aria-labelledby="logoLabel" class="a-Header-apexLogo"><span id="logoLabel" class="u-vh">Oracle APEX Home</span></span></a>
+</div><div id="R32104702900781739" class="" role="navigation" aria-label="Oracle APEX"><div id="a_Header_menu" class="a-Header-tabsContainer a-MenuBar a-MenuBar--tabs" style="" role="menubar"><ul role="none"><li role="none" id="a_Header_menu_0" class="a-MenuBar-item a-Menu--split tab-app-builder"><a role="menuitem" class="a-MenuBar-label" aria-roledescription="Split Menu" id="a_Header_menu_0i" href="https://apex.oracle.com/pls/apex/r/apex/app-builder/apps?session=4296405036843" tabindex="-1">App Builder</a><span class="a-Menu-subMenuCol" role="button" aria-roledescription="Split Button" id="a_Header_menu_0isb" aria-label="App Builder" aria-haspopup="menu" aria-expanded="false" tabindex="-1"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_0m" class="a-Menu a-Menu--top" role="menu" style="display:none;"></div></li><li role="none" id="a_Header_menu_1" class="a-MenuBar-item a-Menu--split a-Menu--current tab-sql-workshop"><a role="menuitem" class="a-MenuBar-label" aria-current="true" aria-roledescription="Split Menu" id="a_Header_menu_1i" href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/sql-workshop?session=4296405036843">SQL Workshop</a><span class="a-Menu-subMenuCol" role="button" aria-roledescription="Split Button" id="a_Header_menu_1isb" aria-label="SQL Workshop" aria-haspopup="menu" aria-expanded="false" tabindex="-1"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_1m" class="a-Menu a-Menu--top" role="menu" style="display:none;"></div></li><li role="none" id="a_Header_menu_2" class="a-MenuBar-item a-Menu--split tab-team-dev"><a role="menuitem" class="a-MenuBar-label" aria-roledescription="Split Menu" id="a_Header_menu_2i" href="https://apex.oracle.com/pls/apex/r/apex/team-development/teamdev?clear=RP&amp;session=4296405036843" tabindex="-1">Team Development</a><span class="a-Menu-subMenuCol" role="button" aria-roledescription="Split Button" id="a_Header_menu_2isb" aria-label="Team Development" aria-haspopup="menu" aria-expanded="false" tabindex="-1"><span class="a-Icon icon-menu-split-drop-down"></span></span><div id="a_Header_menu_2m" class="a-Menu a-Menu--top" role="menu" style="display:none;"></div></li><li role="none" id="a_Header_menu_3" class="a-MenuBar-item tab-apps"><a role="menuitem" class="a-MenuBar-label" id="a_Header_menu_3i" href="https://apex.oracle.com/pls/apex/r/apex/gallery/apps?session=4296405036843" tabindex="-1">Gallery</a></li></ul></div></div></div><div id="R386906639708682887" class="a-Header-col a-Header-col--right"><div id="R385807144565239746" class="a-Header-navLinks" role="region" aria-label="Navigation Bar"><div id="adminMenu" class=""></div><div id="helpMenu" class=""></div><button class="a-Button a-Button--iconTextButton a-Button--noUI a-Button--navLink  a-Button--iconLeft" onclick="void(0);" type="button" id="header-spotlightSearch" data-action="spotlight-search" data-no-update="true">Search<span class="a-Icon icon-search"></span></button><button class="a-Button a-Button--noLabel a-Button--iconTextButton js-menuButton a-Button--noUI a-Button--navLink" onclick="void(0);" type="button" title="Administration" aria-label="Administration" id="header-adminMenu" data-menu="adminMenu_menu" aria-haspopup="menu"><span class="a-Icon icon-gears-alt" aria-hidden="true"></span><span class="a-Icon icon-menu-drop-down" aria-hidden="true"></span></button><button class="a-Button a-Button--noLabel a-Button--iconTextButton js-menuButton a-Button--noUI a-Button--navLink" onclick="void(0);" type="button" title="Help" aria-label="Help" id="header-helpMenu" data-menu="helpMenu_menu" aria-haspopup="menu"><span class="a-Icon icon-help" aria-hidden="true"></span><span class="a-Icon icon-menu-drop-down" aria-hidden="true"></span></button></div><div id="R385816859034290012" class="a-Header-account" role="navigation" aria-label="Account"><button class="a-Button a-Button--noLabel a-Button--iconTextButton a-Button--noUI a-Button--navLink a-Button--accountMenu" type="button" title="Account Menu" data-menu="accountMenu_menu" id="header-accountMenu" aria-haspopup="menu"><span class="a-User a-User--md"><span class="a-User-initials u-color-35" role="presentation" aria-hidden="true" title="Yashoanandan T S">YT</span><span class="a-User-name">Yashoanandan T S<span class="a-User-desc">22CSEB63</span></span></span><span class="a-Icon icon-menu-drop-down"></span></button>
+</div></div></div>
+
+
+
+</header>
+  <div id="main" class="a-Body">
+    <main class="a-Main">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="385762900697898960_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="385762900697898960_E" class="apex-page-error u-hidden"></span><script src="./SQL Workshop3_files/odc.js.download"></script>
+<script>
+// Send Data
+var cxDataObject = {
+"apex.version":"23.2",
+"apex.version.full":"23.2.4",
+"apex.app.id": "4500",
+"apex.app.lang": "",
+"apex.page.id": "3002",
+"apex.user.workspace.id": "57687734592693882187",
+"apex.user.app.id": ""};
+
+function sendIt(data){
+// DO NOT EDIT BELOW THIS LINE - ORA.view()
+window.ORA = window.ORA || {productReady: []};
+ORA.productReady.push(['analytics', function(cxDataObject) {return function() {return ORA.view({"data": cxDataObject})}}(cxDataObject)]);
+}
+
+sendIt(cxDataObject);
+</script>
+        <div class="apex-grid-container">
+<div class="apex-row">
+<div class="apex-col apex-col-12 ">
+<div class="a-Region a-Region--noTopBorder a-Region--paddedBody a-Region--accessibleHeader" role="region" aria-labelledby="R769212543972447_heading" id="R769212543972447">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R769212543972447_heading">WKSP_22CSEB63</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader"></div>
+  <ul class="a-ImageNav sql-workshop"><li class="a-ImageNav-item"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?session=4296405036843" class="a-ImageNav-link "><span class="a-ImageNav-img gi-icon-sql-workshop-object-browser"></span><span class="a-ImageNav-label">Object Browser</span></a></li><li class="a-ImageNav-item"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/sqlcommandprocessor?session=4296405036843" class="a-ImageNav-link "><span class="a-ImageNav-img gi-icon-sql-workshop-commands"></span><span class="a-ImageNav-label">SQL Commands</span></a></li><li class="a-ImageNav-item"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/sql-scripts?session=4296405036843" class="a-ImageNav-link "><span class="a-ImageNav-img gi-icon-apex-sql-script"></span><span class="a-ImageNav-label">SQL Scripts</span></a></li><li class="a-ImageNav-item"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/utilities?session=4296405036843" class="a-ImageNav-link "><span class="a-ImageNav-img gi-icon-apex-utilities"></span><span class="a-ImageNav-label">Utilities</span></a></li><li class="a-ImageNav-item"><a href="https://apex.oracle.com/pls/apex/r/apex/rest/ords-restful-services?session=4296405036843" class="a-ImageNav-link "><span class="a-ImageNav-img gi-icon-sql-workshop-rest"></span><span class="a-ImageNav-label">RESTful Services</span></a></li></ul>
+  </div>
+</div><div id="R11140505307196687" class=""><input type="hidden" name="OB_OBJECT_NAME" id="OB_OBJECT_NAME" value=""><input type="hidden" name="P0_PPRTIMESTAMP" id="P0_PPRTIMESTAMP" value=""></div>
+</div>
+</div><div class="apex-row">
+<div class="apex-col apex-col-4 ">
+<div class="a-Region a-Region--shadowScroll a-Region--noPadding h480 js-apex-region" role="region" aria-labelledby="R46904309839593843_heading" id="R46904309839593843" aria-live="polite">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R46904309839593843_heading">Recently Created Tables</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader"></div>
+  <ul class="a-AVPList " id="R46904309839593843_report">
+
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=258351229&amp;clear=2000&amp;session=4296405036843">ORDERS</a></span>
+  <span class="a-AVPList-value">7 minutes ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=256587327&amp;clear=2000&amp;session=4296405036843">EMPLOYEE</a></span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=256567787&amp;clear=2000&amp;session=4296405036843">INCENTIVES</a></span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=256567780&amp;clear=2000&amp;session=4296405036843">DEPARTMENT</a></span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=254150135&amp;clear=2000&amp;session=4296405036843">TEAM3</a></span>
+  <span class="a-AVPList-value">2 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=254149977&amp;clear=2000&amp;session=4296405036843">TEAM2</a></span>
+  <span class="a-AVPList-value">2 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=254139938&amp;clear=2000&amp;session=4296405036843">TEAM1</a></span>
+  <span class="a-AVPList-value">2 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=252093573&amp;clear=2000&amp;session=4296405036843">INVOICE_JAN</a></span>
+  <span class="a-AVPList-value">3 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250146950&amp;clear=2000&amp;session=4296405036843">INVITEMS</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250146938&amp;clear=2000&amp;session=4296405036843">INVOICES</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250146879&amp;clear=2000&amp;session=4296405036843">ITEMS</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250146876&amp;clear=2000&amp;session=4296405036843">CUSTOMER1</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250140496&amp;clear=2000&amp;session=4296405036843">INVITEM</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250140082&amp;clear=2000&amp;session=4296405036843">INVOICE</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"><a href="https://apex.oracle.com/pls/apex/r/apex/sql-workshop/ob?p2000_ob_init_schema=WKSP_22CSEB63&amp;p2000_ob_init_id=250138233&amp;clear=2000&amp;session=4296405036843">ITEM</a></span>
+  <span class="a-AVPList-value">4 weeks ago</span>
+</li>
+</ul>
+  </div>
+</div>
+</div><div class="apex-col apex-col-4 apex-col--leftBorder apex-col--bottomBorder">
+<div class="a-Region a-Region--shadowScroll a-Region--noPadding h480 js-apex-region" role="region" aria-labelledby="R46915904438027404_heading" id="R46915904438027404" aria-live="polite">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R46915904438027404_heading">Recent SQL Commands</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader"></div>
+  <ul class="a-AVPList " id="R46915904438027404_report">
+
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"> SELECT COUNT(*) AS total_orders,  ...</span>
+  <span class="a-AVPList-value">4 minutes ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"> INSERT INTO orders (order_id, cust...</span>
+  <span class="a-AVPList-value">5 minutes ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"> INSERT INTO orders (order_id, cust...</span>
+  <span class="a-AVPList-value">5 minutes ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label"> INSERT INTO orders (order_id, cust...</span>
+  <span class="a-AVPList-value">5 minutes ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">CREATE TABLE orders (     order_id ...</span>
+  <span class="a-AVPList-value">7 minutes ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">select*from department;</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">select* from employee;</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">UPDATE INCENTIVES SET INCENTIVE_AMO...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">SELECT A.EMP_ID,A.FIRST_NAME||A.LAS...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">SELECT A.DEPT_ID, B.DEPT_NAME, AVG(...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">SELECT a.DEPT_ID, b.DEPT_NAME, MIN(...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">SELECT A.DEPT_ID, B.DEPT_NAME, MIN(...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">select dept_name, min(salary) from ...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">select dept_id, min(salary) from em...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+<li class="a-AVPList-item">
+  <span class="a-AVPList-label">select dept_id, min(salary) from em...</span>
+  <span class="a-AVPList-value">6 days ago</span>
+</li>
+</ul>
+  </div>
+</div>
+</div><div class="apex-col apex-col-4 apex-col--leftBorder apex-col--bottomBorder">
+<div class="a-Region a-Region--shadowScroll a-Region--noPadding h480 js-apex-region" role="region" aria-labelledby="R24083118039996911_heading" id="R24083118039996911" aria-live="polite">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R24083118039996911_heading">Recent SQL Scripts</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader"></div>
+  <div id="report_24083118039996911_catch"><span class="nodatafound"></span>
+</div>
+  </div>
+</div>
+</div>
+</div><div class="apex-row">
+<div class="apex-col apex-col-12 ">
+<div class="a-ButtonRegion a-ButtonRegion--banner apex-sql-workshop a-ButtonRegion--withItems" id="R33438082761898212" role="region" aria-labelledby="R33438082761898212_TITLE">
+  <div class="a-ButtonRegion-wrap">
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--left"><div class="a-ButtonRegion-buttons"></div></div>
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--content">
+      <h2 id="R33438082761898212_TITLE" class="a-ButtonRegion-title">Learn More Region</h2>
+      <div class="a-MediaBlock">
+    <div class="a-MediaBlock-graphic">
+        <span class="icon-get-started" aria-hidden="true"></span>
+    </div>
+    <div class="a-MediaBlock-content">
+        <h2>Learn more about SQL Workshop</h2>
+    </div>
+</div>
+
+      <div class="a-ButtonRegion-buttons"></div>
+    </div>
+    <div class="a-ButtonRegion-col a-ButtonRegion-col--right"><div class="a-ButtonRegion-buttons"><button onclick="apex.navigation.openInNewWindow(&#39;https://apex.oracle.com/go/get_started_sql_workshop&#39;);" class="a-Button a-Button--dark  a-Button--strongLabel" type="button" id="B33441178232898243">Get Started</button></div></div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+    </main>
+    <aside class="a-Side">
+        <div class="a-Region a-Region--stacked a-Region--padded a-Region--flush a-Region--sideRegion  a-Region--paddedBody" role="region" aria-labelledby="R48531311825296092_heading" id="R48531311825296092">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R48531311825296092_heading">About</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader"></div>
+  <p>The SQL Workshop is a collection of tools to manage database objects.</p>
+<p><a target="_blank" href="https://apex.oracle.com/doc232?context=4500:3002">Learn More ...</a></p>
+  </div>
+</div><div class="a-Region a-Form--floatColsLeft  a-Region--noPadding a-Form--leftLabels" role="region" aria-labelledby="R201516612078031858_heading" id="R201516612078031858">
+  <div class="a-Region-header">
+    <div class="a-Region-headerItems  a-Region-headerItems--title">
+      <h2 class="a-Region-title" id="R201516612078031858_heading">Schema</h2>
+    </div>
+    <div class="a-Region-headerItems  a-Region-headerItems--buttons">
+      
+    </div>
+  </div>
+  <div class="a-Region-body">
+  <div class="a-Region-bodyHeader">Select the default database schema for your SQL Workshop session.</div>
+  <div class="a-Form-fieldContainer a-Form-fieldContainer--stretch a-Form-fieldContainer--autoLabelWidth apex-item-wrapper apex-item-wrapper--has-initial-value apex-item-wrapper--select-list" id="P3002_SCHEMA_CONTAINER"><div class="a-Form-labelContainer a-Form-labelContainer--visuallyhidden">
+<label for="P3002_SCHEMA" id="P3002_SCHEMA_LABEL" class="a-Form-label visuallyhidden">Schema</label>
+</div><div class="a-Form-inputContainer"><select id="P3002_SCHEMA" name="P3002_SCHEMA" class="selectlist apex-item-select a-Form-field stretch" data-native-menu="false" size="1"><option value="WKSP_22CSEB63" selected="selected">WKSP_22CSEB63</option>
+</select><span id="P3002_SCHEMA_error_placeholder" class="a-Form-error" data-template-id="717397144393801382_ET"></span></div></div>
+  </div>
+</div>
+    </aside>
+  </div>
+<footer class="a-Footer">
+  <div class="a-Footer-info">
+    <span class="a-Footer-attribute">
+      <span role="img" class="a-Icon icon-user" title="User" aria-label="User"></span>
+      YASHO310305@GMAIL.COM
+    </span>
+    <span class="a-Footer-attribute">
+      <span role="img" class="a-Icon icon-workspace" title="Workspace" aria-label="Workspace"></span>
+      22CSEB63
+    </span>
+    <span class="a-Footer-attribute">
+      <span role="img" class="a-Icon icon-language" title="Language" aria-label="Language"></span>
+      en
+    </span>
+  </div>
+  <div class="a-Footer-copyright">Copyright © 1999, 2023, Oracle and/or its affiliates.</div>
+  <div class="a-Footer-version">Oracle APEX 23.2.4</div>
+</footer>
+<input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/gCMG9wmT4j5yLTGtqJsCTOUsgMeNEVJoBZYk5dF6CxZ86aYRGvfDIu7UY1mxFeFQZmEgJqIvI9OfTh_w545TNA"></form>
+
+
+<script>
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F23.2.4\u002F";
+var apex = {env: {DB_VERSION: 19,APP_USER: "YASHO310305@GMAIL.COM",APP_ID: "4500",APP_PAGE_ID: "3002",APP_SESSION: "4296405036843",APP_FILES: "r\u002Fapex\u002F4500\u002Ffiles\u002Fstatic\u002Fv1\u002F",WORKSPACE_FILES: "r\u002Fapex\u002Ffiles\u002Fstatic\u002Fv1\u002F",APEX_VERSION: "23.2.4",APEX_BASE_VERSION: "23.2"},
+libVersions:{ckeditor5:"36.0.0",cropperJs:"1.5.13",domPurify:"3.0.5",fullcalendar:"6.1.8",hammer:"2.0.8",jquery:"3.6.4",jqueryUi:"1.13.2",maplibre:"2.4.0",markedJs:"5.1.2",prismJs:"1.29.0",oraclejet:"15.0.7",tinymce:"6.8.2",turndown:"7.1.1",monacoEditor:"0.32.1",lessJs:"4.1.3",csso:"5.0.5",terser:"5.19.2"}};
+</script>
+<script src="./SQL Workshop3_files/desktop_all.min.js.download"></script>
+<script src="./SQL Workshop3_files/wwv_flow.js_messages"></script>
+<script src="./SQL Workshop3_files/legacy_pre18.min.js.download"></script>
+<script src="./SQL Workshop3_files/legacy_18.min.js.download"></script>
+<script src="./SQL Workshop3_files/builder_all.min.js.download"></script>
+
+<script type="text/javascript">
+apex.da.initDaEventList = function(){
+apex.da.gEventList = [
+{"triggeringElementType":"ITEM","triggeringElement":"P3002_SCHEMA","bindType":"bind","executionType":"IMMEDIATE","bindEventType":"change","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:apex.da.submitPage,"attribute02":"Y","action":"NATIVE_SUBMIT_PAGE"}]}];
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="./SQL Workshop3_files/widget.report.min.js.download"></script>
+<script type="text/javascript">
+apex.session.initTimeouts(180,{"idle_time_ms":7200000,"life_time_ms":42717000,"max_idle_time_ms":7200000},'\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace\u002Fhome','\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace\u002Fhome');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){var e = apex.jQuery("#adminMenu_menu", apex.gPageContext$);
+if (e.hasClass("js-addActions")) {
+  apex.actions.addFromMarkup(e);
+}
+e.menu({ slide: e.hasClass("js-slide")});
+})();
+(function(){var e = apex.jQuery("#helpMenu_menu", apex.gPageContext$);
+if (e.hasClass("js-addActions")) {
+  apex.actions.addFromMarkup(e);
+}
+e.menu({ slide: e.hasClass("js-slide")});
+})();
+(function(){apex.widget.report.init("R46904309839593843","UkVHSU9OIFRZUEV-fjQ2OTA0MzA5ODM5NTkzODQz\u002F2lprWbwsx1XluXVenImd00XGBBmczaE4pJqrCGPnPZMCRevFW9PlLTyhrAIoPDzfF0gyVu-uSFpf0Wi8jpBWwA",{"lazyLoading":false,"internalRegionId":"46904309839593843"});})();
+(function(){apex.widget.report.init("R46915904438027404","UkVHSU9OIFRZUEV-fjQ2OTE1OTA0NDM4MDI3NDA0\u002F5NfbhLTJShTYs7xYiHzyxG1NEVcwqkJNm-0MEm0SBshbrhduWYXl64iLhJQ64fVltQR4a_Mu9GLAPCIksdy2Jw",{"lazyLoading":false,"internalRegionId":"46915904438027404"});})();
+(function(){apex.widget.report.init("R24083118039996911","UkVHSU9OIFRZUEV-fjI0MDgzMTE4MDM5OTk2OTEx\u002Flj4jj2ZCXpWhmaKU-yYuyOCp5QjxG-XLxdWtdOBSYB0Z8pZVbJKcvvdWW5JhCWZ2XAazBlbuSGWvebDIA-opVg",{"lazyLoading":false,"internalRegionId":"24083118039996911"});})();
+(function(){apex.widget.selectList("#P3002_SCHEMA",{"ajaxIdentifier":"SVRFTSBUWVBFfjUxMjB-NDY5MTA0MTAxODU5NDM5MzU\u002F8UtuFuCqAftGS8M2Q1msFjeChrjUE0gzRWAQKj18Vlo9uKIZJ6RmA37w48PG-OMMCiDOBbLfuYK9Jxr71aND2Q"});})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+(function(){apex.da.initDaEventList();
+apex.da.init();})();
+
+
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.cleanup( { serviceWorkerPath:'\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fsql-workshop\u002Fsw.js?v=23.2.4-15508156506850\u0026lang=en' } );
+</script>
+
+<div id="accountMenu_menu" class="a-Header-accountDialog a-Menu" role="menu" style="display: none;">  <div class="a-MediaBlock a-Menu-content">    <div class="a-MediaBlock-graphic"><span class="a-User a-User--xl"><span class="a-User-initials u-color-35" role="presentation" aria-hidden="true" title="Yashoanandan T S">YT</span></span>      <a href="javascript:apex.navigation.dialog(&#39;\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace-admin\u002Fedit-profile?session=4296405036843\u0026dialogCs=FeOHyPEPEOyHcLbINrJ9_1iKcAQ8_5DjwP3Gro4j5KnySc3TO8S7URl1VWXuFb7LmrlfmolYzzZDP17XG4RHDw&#39;,{title:&#39;Edit Profile&#39;,height:&#39;550&#39;,width:&#39;600&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,baseDialogClass:&#39;a-Dialog--uiDialog&#39;,dialogClass:&#39;&#39;,jsDialogClass:true,resizable:true,minWidth:500,minHeight:400},&#39;&#39;,&#39;#R385816859034290012&#39;);" class="a-Header-accountDialog-editProfile">Edit Profile</a>    </div>    <div class="a-MediaBlock-content">      <div class="a-Menu-label">        <span class="a-Header-dialogText a-Header-dialogName">Yashoanandan T S</span>        <span class="a-Header-dialogText a-Header-dialogUsername">yasho310305@gmail.com</span></div>      <div class="a-Menu-label">        <span class="a-Header-dialogLabel">Workspace</span><span class="a-Header-dialogValue">22CSEB63</span></div>      <div class="a-Menu-label"><span class="a-Header-dialogLabel">Role</span><span class="a-Header-dialogValue">Administrator</span></div><div class="a-Header-accountDialog-uiModeSwitch" role="group" aria-label="Appearance"><button type="button" data-mode="auto" class="is-off js-ui-mode-btn a-Menu-item a-Menu-label" role="menuitem" title="Automatic" aria-label="Automatic" aria-current="false"><span class="uiModeSwitch-icon uiModeSwitch-icon-auto"></span></button><button type="button" data-mode="standard" class="is-off js-ui-mode-btn a-Menu-item a-Menu-label" role="menuitem" title="Light Mode" aria-label="Light Mode" aria-current="false"><span class="uiModeSwitch-icon uiModeSwitch-icon-light"></span></button><button type="button" data-mode="dark" class="is-on js-ui-mode-btn a-Menu-item a-Menu-label" role="menuitem" title="Dark Mode" aria-label="Dark Mode" aria-current="true"><span class="uiModeSwitch-icon uiModeSwitch-icon-dark"></span></button></div>    </div>  </div>  <div class="a-Header-accountDialog-buttons">    <div class="a-Toolbar">      <div class="a-Toolbar-items a-Toolbar-items--left">        <button type="button" onclick="javascript:apex.navigation.dialog(&#39;\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace-admin\u002Fpreferences?f4350_p102_user_id=57687734449714882187\u0026session=4296405036843\u0026dialogCs=BccbnBEHnBiAojsm7Pro9GjwoPyemReWMIzQu6snY8Q2Z5XpPI6BxRV4yod_G31xD3rSdUqv45TW9CO7EztoXA&#39;,{title:&#39;Preferences&#39;,height:&#39;480&#39;,width:&#39;720&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,baseDialogClass:&#39;a-Dialog--uiDialog&#39;,dialogClass:&#39;&#39;,jsDialogClass:true,resizable:true,minWidth:500,minHeight:400},&#39;&#39;,&#39;#R385816859034290012&#39;);" class="a-Button">Preferences</button>      </div>      <div class="a-Toolbar-items a-Toolbar-items--right">        <button type="button" onclick="apex.navigation.redirect(&#39;apex_authentication.logout?p_app_id=4500\u0026p_session_id=4296405036843&#39;);" class="a-Button">Sign out</button>      </div>    </div>  </div></div><div id="adminMenu_menu" class="a-Menu" style="display:none;" role="menu"><ul><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/administration?session=4296405036843" title="" target="">Administration</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/separator" title="" target="">------</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/" title="" target="">Manage Service</a><ul><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/manage-service?session=4296405036843" title="" target="">Manage Service</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/separator" title="" target="">------</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/request-service-identify-request?clear=49&amp;session=4296405036843" title="" target="">Make a Service Request</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/set-workspace-preferences?clear=RP&amp;session=4296405036843" title="" target="">Set Workspace Preferences</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace-admin\u002Fworkspace-message?session=4296405036843\u0026dialogCs=Czw3Sk3Smd4BsMXQYZR7x4TMoiqCrLqunALGSV3eU9rVzK6WHGiCFwbhO8GHiAnVnBp3xzAVGC0lIsHjgIMygg&#39;,{title:&#39;Workspace Message&#39;,height:&#39;320&#39;,width:&#39;500&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,baseDialogClass:&#39;a-Dialog--uiDialog&#39;,dialogClass:&#39;&#39;,jsDialogClass:true,resizable:true,minWidth:500},&#39;&#39;,&#39;#adminMenu_menu&#39;);" title="" target="">Define Workspace Message</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace-admin\u002Fenvironment-banner?p105_last_app_id=4500\u0026p105_last_page_id=3002\u0026clear=105\u0026session=4296405036843\u0026cs=1UeORZfs4vAYNwLV6VguiaHtk3xU\u0026dialogCs=fRuUngKwVZQjyOBPA1-t5KusKRZ4ybQHdiFEbSRbYLX7W8ObNVX9l6W6jO8W1bQFnh_CyFPMqtfBmKoAWpZNjg&#39;,{title:&#39;Workspace Environment Banner&#39;,height:&#39;480&#39;,width:&#39;640&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,baseDialogClass:&#39;a-Dialog--uiDialog&#39;,dialogClass:&#39;&#39;,jsDialogClass:true},&#39;&#39;,&#39;#adminMenu_menu&#39;);" title="" target="">Define Environment Banner</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/workspace-utilization?session=4296405036843" title="" target="">Workspace Utilization</a></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/links?session=4296405036843" title="" target="">Manage Extension Links</a></li></ul></li><li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/manage-users?session=4296405036843" title="" target="">Manage Users and Groups</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/monitor-activity?session=4296405036843" title="" target="">Monitor Activity</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/r/apex/workspace-admin/workspace-dashboard?session=4296405036843" title="" target="">Dashboards</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace-admin\u002Fedit-profile?clear=3\u0026session=4296405036843\u0026dialogCs=FeOHyPEPEOyHcLbINrJ9_1iKcAQ8_5DjwP3Gro4j5KnySc3TO8S7URl1VWXuFb7LmrlfmolYzzZDP17XG4RHDw#pwd&#39;,{title:&#39;Edit Profile&#39;,height:&#39;550&#39;,width:&#39;600&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,baseDialogClass:&#39;a-Dialog--uiDialog&#39;,dialogClass:&#39;&#39;,jsDialogClass:true,resizable:true,minWidth:500,minHeight:400},&#39;&#39;,&#39;#adminMenu_menu&#39;);" title="" target="">Change My Password</a></li>
+</ul></div><div id="helpMenu_menu" class="a-Menu" style="display:none;" role="menu"><ul><li data-id="helpLinkDocLib" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/doc232?context=4500:3002" title="" target="">Documentation</a></li>
+<li data-id="helpLinkForum" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/forum" title="" target="">Discussion Forum</a></li>
+<li data-id="helpLinkOTN" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/" title="" target="">Learn More about Oracle APEX</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="https://apex.oracle.com/pls/apex/separator" title="" target="">---</a></li>
+<li data-id="" data-disabled="" data-hide="" data-shortcut="" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;\u002Fpls\u002Fapex\u002Fr\u002Fapex\u002Fworkspace-admin\u002Fabout?session=4296405036843\u0026dialogCs=SwT92KtHE5qH9fqvLB14VAh9fteGSqeJlG7kc0u4WhiYob0fe6_Vo-DZOsVu7hhS8h41b4efx-UDsff88anJCw&#39;,{title:&#39;About Oracle APEX&#39;,height:&#39;500&#39;,width:&#39;490&#39;,maxWidth:&#39;1200&#39;,modal:true,dialog:null,baseDialogClass:&#39;a-Dialog--uiDialog&#39;,dialogClass:&#39;&#39;,jsDialogClass:true,scroll:&#39;auto&#39;},&#39;&#39;,&#39;#helpMenu_menu&#39;);" title="" target="">About</a></li>
+</ul></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
